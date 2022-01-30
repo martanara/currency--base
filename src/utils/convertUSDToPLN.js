@@ -5,5 +5,5 @@ export const convertUSDToPLN = (USD) => {
     currency: 'PLN'
   });
 
-  return formatter.format(USDtoPLN);
+  return formatter.format(USDtoPLN).replace(/\s+/, ' ');
 }
